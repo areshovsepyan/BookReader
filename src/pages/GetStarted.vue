@@ -1,18 +1,25 @@
 <template>
   <base-badge>
     <BaseVideo />
-    <BaseText />
+    <BaseData />
   </base-badge>
 </template>
 
 <script>
 import BaseVideo from '../components/media/BaseVideo.vue';
-import BaseText from '../components/media/BaseText.vue';
+import BaseData from '../components/media/BaseData.vue';
 
 export default {
   components: {
     BaseVideo,
-    BaseText,
+    BaseData,
+  },
+  mounted() {
+    document.addEventListener('keypress', async e => {
+      if (e.code === 'Space' && window.location.pathname === '/get-started') {
+        this.$store.dispatch('createCanvas');
+      }
+    });
   },
 };
 </script>
