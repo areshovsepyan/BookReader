@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-container">
-      <pre id="text-area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, magnam quaerat. Omnis recusandae ipsa, aliquid, vel nam rem debitis maiores quia atque corporis minus, nisi temporibus reiciendis placeat non quaerat alias quasi incidunt? Aut quaerat dolorum ipsum quas soluta hic obcaecati ratione natus commodi numquam praesentium iure suscipit, consequuntur debitis consectetur ab fugiat? Exercitationem quod cumque ratione, nihil quia distinctio fuga eveniet deleniti asperiores repellendus iste molestias sunt officia delectus nobis animi iusto voluptatibus, temporibus ipsam ex, nostrum obcaecati quam repudiandae rem! Veniam dignissimos alias ducimus debitis quidem nihil illum doloribus sunt! Ea dolorem veniam numquam debitis. Possimus, accusamus eius?</pre>
+      <pre id="text-area"></pre>
     </div>
     <div class="paragraph">
       <p>
@@ -47,7 +47,7 @@ export default {
 }
 
 pre {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   margin-left: 1rem;
   font-size: 1rem;
   font-family: inherit;
