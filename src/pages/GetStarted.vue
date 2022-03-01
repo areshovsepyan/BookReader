@@ -6,14 +6,15 @@
 </template>
 
 <script>
-import BaseVideo from '../components/media/BaseVideo.vue';
-import BaseData from '../components/media/BaseData.vue';
+import BaseVideo from '../components/base-components/BaseVideo.vue';
+import BaseData from '../components/base-components/BaseData.vue';
 
 export default {
   components: {
     BaseVideo,
     BaseData,
   },
+  computed: {},
   mounted() {
     document.addEventListener('keypress', async e => {
       if (e.code === 'Space' && window.location.pathname === '/get-started') {

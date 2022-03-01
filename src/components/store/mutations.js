@@ -8,8 +8,12 @@ export default {
       });
       state.videoElement.srcObject = state.localStream;
       state.cameraIsOn = true;
+      state.accessDenied = false;
     } catch (error) {
       console.log(error);
+      if (error) {
+        state.accessDenied = true;
+      }
     }
   },
   cameraOff(state) {

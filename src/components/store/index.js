@@ -8,6 +8,7 @@ import storeGetters from './getters.js';
 const store = createStore({
   state() {
     return {
+      accessDenied: false,
       receivedObject: {},
       textElement: null,
       localStream: null,
